@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML and CSS</title>
+</head>
+
+<body>
+    <div class="html">
+        <h1>HTML</h1>
+
+        <hr />
+        <h2>Parágrafos</h2>
+
+        <p>
+            Para escrever um parágrafo em html, basta colocar tudo no meio de um par de tags &lt;p&gt; e &lt;/p&gt;. Se precisar quebrar o texto em algum lugar específico, você pode usar a tag &lt;br&gt;. Mas, caso precise de várias linhas de espaço, é indicado o
+            uso do CSS.
+        </p>
+
+        <p>
+            Já para adicionar comentários utilizamos &lt!--(escreva aqui seu comentário--&gt, vale ressaltar que eles não apareceram para seu usuário, ao contrário das linhas( &lt;hr&gt; ), dos símbolos( &reg; &copy; &trade; &euro; &yen; &cent; &pound; &delta; &uarr;)
+            e dos emoji( &#x1F596; &#X1F913;).
+        </p>
+
+        <h2>Testando carga e Imagens</h2>
+        <p>
+            Ao utilizar imagens, é necessário atenção aos direitos autorias. Para isso, abra a ferramenta do google imagens e marque a opção reutilização com modificação ou então use como fonte o site: Unsplash ou Pexels.
+        </p>
+        <img src="HTML-logo.png" width="51%" style="float: left" alt="HTML logo" />
+        <h2>Favicon</h2>
+        <p>
+            Favicon é o nome que se dá ao ícone do site, ele é adicionado ao html na área head em forma de link. Existem diversas opções prontas no site iconarchive, mas na hipótese de precisar desenhar o seu ícone, tem-se o site favicon.cc.
+        </p>
+
+        <h2>Hierarqui de titulos</h2>
+        <p>
+            Os títulos vão de h1 a h6, sendo que cada H é um nível, o qual deve ser seguido rigorosamente. Consequentemente, é necessário a utilização do CSS quando o tamanho não se adequar a parte estética.
+        </p>
+        <h2>Principais formatações</h2>
+        <h3>Negrito/ Destaque</h3>
+        <p>
+            Um termo em negrito pode ser escrito com a <b> tag B</b>, a qual não é semântica, ou com a <strong>tag strong </strong>, que por sua vez é semântica.
+        </p>
+        <h3>Itálico/ Ênfase</h3>
+        <p>
+            Em itálico a <i>tag i </i> é a não semântica e a <em>tag em</em> é a semântica.
+        </p>
+        <h3>Texto marcado</h3>
+        <p>
+            Nos textos marcado temos somente a <mark>tag mark</mark> ,porém são geradas mais opções ao se colocar o CSS dentro da tag e
+            <mark style="background-color: rgb(255, 81, 0)">
+          selecionando o background-color</mark
+        >, sendo esta uma formatação pontual.
+      </p>
+      <h3>Texto pequeno</h3>
+      <p>
+        As letras pequenas de um contrato podem ser geradas com a
+        <small> tag small</small>.
+      </p>
+      <h3>Texto deletado/ inserido</h3>
+      <p>
+        A marcação de um texto excluído com a <del>tag del </del>, e a ênfase de
+        um texto inserido com a <ins> tag ins </ins>.
+      </p>
+      <h3>Texto sobrescrito/subscrito</h3>
+      <p>
+        Textos sobrescritos (como o 20 desse exemplo: x<sup>20</sup>) são
+        gerados com a tag sup, por sua vez textos subscritos (como o 2 desse
+        exemplo: H<sub>2</sub>O) são gerados com a tag sub.
+      </p>
+
+      <h3>Código-fonte</h3>
+      <p>
+        Ao se inserir códigos, a tag code possibilita um melhor espaçamento.
+        <br />
+        <br />
+        <code>document.getElementById('teste')</code> <br />
+        <br />
+        Entretanto, para se ter identação, é necessário envelopar a tag code com
+        a tag pre.
+      </p>
+      <pre>
+      <code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else:
+    print(f'O número {num} é ÍMPAR)
+      </code>
+    </pre>
+      <h3>Citações</h3>
+      <p>
+        Em citações simples o ideal é utilizar a tag q. <br />
+        <br />
+        Como diria o pai de um amigo:
+        <q>o computado é um burro muito rápido</q>.
+      </p>
+      <p>
+        Por todavia, em as citações completas a tag blockquote se adequa melhor,
+        sendo possível inserimos o link da referência dentro da tag.
+      </p>
+      <blockquote cite="https://www.google.com">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rerum
+        accusantium consectetur porro at, ipsa, soluta nesciunt culpa atque
+        error totam facilis esse vel repudiandae autem voluptates, adipisci non
+        quam?
+      </blockquote>
+      <h3>Abreviações</h3>
+      <p>
+        Com a formatação da tag abrr pode-se adicionar o nome completo à
+        palavras abreviadas, sendo visível ao se passar o mouse por cima da
+        palavra. <br />
+        <br />
+        <abrr title="HyperText Markup Language">HTML</abrr> e
+        <abbr title="Cascading Style Sheets">CSS</abbr>
+      </p>
+      <h3>Texto invertido</h3>
+      <p>
+        E por fim, vale demonstratar a tag bdo dir="ltr" que inverte o que foi
+        escrito.
+      </p>
+      <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+      <h2>Listas</h2>
+      <h3>Listas Ordenadas</h3>
+      <p>
+        Usamos a tag ol para abrir uma lista e cada item deve ficar dentro da
+        tag li, como no exemplo abaixo:
+      </p>
+      <ol>
+        <li>acordar</li>
+        <li>tomar cafe</li>
+        <li>escovar os dentes</li>
+      </ol>
+      <p>
+        Podemos personalizar a formatação da lista colocando type dentro da tag
+        de ol.
+      </p>
+      <h3>Listas não ordenadas</h3>
+      <p>
+        São listas que não precisam ser enumeradas, para isso abrimos a tag ul.
+      </p>
+      <ul>
+        <li>pao</li>
+        <li>leite</li>
+        <li>tomate</li>
+      </ul>
+      <p>Assim como na anterior ela tbm possui diversos types.</p>
+      <h3>Lista de definição</h3>
+      <p>
+        Já para lista de definições abrimos a tag dl, utilizando dt para o nome
+        de cada elemento que será explicado e dd para a explicação.
+      </p>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+      </dl>
+      <h2>Trabalhando com links:</h2>
+      <h3>Externos</h3>
+      <p>
+        A tag a possibilita adicionar um link e para que esse link ao ser aberto
+        não se sobreponha à sua pagina, utilize: target="_blank" rel="external".
+      </p>
+      <p>
+        Voce pode acessar o meu
+        <a href="https://BiancaMalta.github.io/" target="_blank" rel="external"
+          >repositório publico no Github</a
+        >
+        e conferir essa usabilidade.
+      </p>
+      <h3>Internos</h3>
+      <p>
+        Links internos geram coneções com outras páginas que também estão dentro
+        do nosso servidor. Supondo que a página atual seja a primeira página do
+        site e que você queira acessar a
+        <a href="pag002.html" rel="next">segunda</a> página presente nesse
+        servidor. Valeu lembra que ./ é na mesma pag e ../ é na página anteiror.
+      </p>
+      <h3>Para download</h3>
+      <p>
+        A ferramente do usuário clicar em algo no seu site e automaticamente
+        começar o download é resultado de um pdf baixado e compactado dentro de
+        uma tag a, juntamente com: download="meulivro.zip"
+        type="application/zip"
+      </p>
+      <h2>Mídia</h2>
+      <h3>Imagem dinâmica</h3>
+      <p>
+        Seu site precisa se adaptar a diferentes dispositivos, será necesssário
+        disponibilizar diferentes sources, os quais, somados com a tag img, vão
+        ser envelopados pela tag picture. A organização dessa estrutura deve
+        seguir uma order de tamanho, com a menor no primeiro source e a maior na
+        tag img, a limitação de tela deve utilizar a tag max-with.
+      </p>
+      <h3>Áudio</h3>
+      <p>
+        A inserção de áudio ocorre pela tag audio + controls para controles +
+        autoplay para tocar assim que abrir a página. A tag source também pode
+        ser usada aqui, possibilitando varias opções de carregamento ao usuário.
+      </p>
+      <h3>Vídeo</h3>
+      <p>
+        Se tratando de vídeo, não compensa disponibilizar a melhor resolução.
+        Cabe lembrar que vídeos hospedados diretamente do seu servidor vão
+        consumir muito tráfego de dados, a melhor opção é adicionar vídeos de
+        serviços de hospedagem de vídeo, como o YouTube, basta o iframe
+        dispobinilizado.
+      </p>
+    </div>
+
+    <div class="css">
+      <img
+        src="CSS-logo.svg"
+        width="350px"
+        style="float: right"
+        alt="CSS logo"
+      />
+
+      <h1>CSS</h1>
+      <hr />
+      <h2>Estilos Inline</h2>
+      <p>
+        Ao se colocar dentro de cada tag um style, são gerados estilos locais,
+        que em excesso poluí seu html, logo um metódo para configurações
+        pontuais.
+      </p>
+      <h2>Estilos Internos</h2>
+      <p>
+        Os estilos internos são baseado em seletores e criados dentro da área de
+        head. Exemplo:
+      </p>
+      <blockquote>
+        body{ background-color: lightsteelblue; font-family: Arial, Helvetica,
+        sans-serif; font-size: 20px; }
+      </blockquote>
+      <p>
+        A desvantagem dessa técnica é que além de ocupar muito mais espaço que o
+        html, ela se limita a apenas aquela página.
+      </p>
+      <h2>Estilos Externos</h2>
+      <p>
+        A apliacação do style ficará em outra página, para isso, dentro do head
+        colocamos um link para o css. Não se esqueça que a compatibilidade com a
+        acentuação, depende de @charset "UTF-8";.
+      </p>
+    </div>
+  </body>
+</html>
